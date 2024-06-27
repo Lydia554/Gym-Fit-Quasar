@@ -1,0 +1,45 @@
+{
+  "name": "quasar1",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
+  "productName": "Gym-Fit",
+  "author": "Lydia554 <73587947+Lydia554@users.noreply.github.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.4",
+    "aos": "^2.3.4",
+    "leaflet": "^1.9.4",
+    "quasar": "^2.8.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "vue-scrollto": "^2.20.0",
+    "vue-sticky-directive": "^0.0.10",
+    "vue3-leaflet": "^1.0.48"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.24.5",
+    "@mdi/font": "^7.4.47",
+    "@quasar/app-vite": "^1.8.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.25.0",
+    "postcss": "^8.4.14",
+    "prettier": "^2.5.1",
+    "sass": "^1.74.1",
+    "sass-loader": "^14.1.1",
+    "vite-plugin-checker": "^0.6.4"
+  },
+  "engines": {
+    "node": "^20 || ^18 || ^16",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

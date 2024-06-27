@@ -1,0 +1,270 @@
+.footer-bottom q-container {
+  width: 80%;
+}
+
+.footer {
+  color: #37423b;
+  font-size: 14px;
+  background: #eef0ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bottom-row {
+  background-color: #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin-left: 20%;
+}
+
+.footer-top {
+  padding: 50px 0;
+  background: #eef0ef;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-bottom {
+  display: flex;
+
+  align-items: flex-end;
+  padding: 10px 0;
+  background: #dddddd;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-contact:not(:last-child),
+.footer-links:not(:last-child),
+.footer-newsletter:not(:last-child) {
+  margin-right: 200px;
+}
+
+.footer-contact h3,
+.footer-links h4,
+.footer-newsletter h4 {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.footer-contact p {
+  margin-bottom: 15px;
+}
+
+.footer-links .q-item {
+  margin-bottom: 10px;
+}
+
+.footer .footer-newsletter {
+  font-size: 15px;
+}
+
+.footer-newsletter .newsletter-form {
+  background: #b3b3b3;
+  position: relative;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 25px;
+
+  padding: 1px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.newsletter-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.newsletter-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.newsletter-details {
+  font-size: 14px;
+  color: #999;
+}
+
+.footer-contact h3,
+.footer-links h4,
+.footer-newsletter .newsletter-input {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.newsletter-button {
+  flex-shrink: 0;
+  color: white;
+  background-color: #cf4c4c;
+  border-radius: 25px;
+}
+
+.newsletter-button:hover {
+  background-color: #660000;
+}
+
+.copyright {
+  margin-left: 7%;
+}
+
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #a0a0a0;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+
+  transition: 0.3s;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #660000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a::before {
+  content: none;
+}
+
+.footer-links .q-item::before {
+  content: "→";
+  margin-right: 5px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 70vh;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    padding: 40px 0;
+  }
+
+  .footer-top .q-col,
+  .footer-bottom .q-col {
+    flex: 1 1 auto;
+  }
+
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-contact,
+  .footer-links,
+  .footer-newsletter {
+    padding: 8px;
+    margin-left: 20px;
+  }
+
+  .footer-newsletter {
+    flex-basis: 100%;
+    max-width: 90%;
+    margin-left: 5%;
+    padding: 8px 0;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .newsletter-input {
+    flex-grow: 1;
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .newsletter-button {
+    flex-shrink: 0;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .newsletter-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 3%;
+  }
+
+  .newsletter-description {
+    font-size: 13px;
+    color: #666;
+    margin-left: 3%;
+  }
+
+  .newsletter-details {
+    font-size: 10px;
+    color: #999;
+    margin-left: 3%;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-left: -15%;
+    font-size: 10px;
+  }
+
+  .social-links a {
+    font-size: 10px;
+  }
+
+  .copyright {
+    margin-left: 5%;
+  }
+
+  .footer-icon {
+    font-size: 16px;
+  }
+
+  .footer-links .q-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-links .q-item {
+    display: flex;
+    margin-right: 8px;
+  }
+
+  .footer h3,
+  .footer h4 {
+    margin-left: 8px;
+  }
+
+  .footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

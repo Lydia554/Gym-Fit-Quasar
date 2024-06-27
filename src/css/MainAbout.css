@@ -1,0 +1,230 @@
+.main-about-flex-container {
+  display: flex;
+}
+
+.main-about-text-content {
+  flex: 1;
+  margin-right: 10px;
+  margin-left: 20%;
+}
+
+.main-about-image-content {
+  flex: 1;
+  max-width: 30%;
+  height: auto;
+  margin-right: 20%;
+}
+
+.main-about-row {
+  margin-top: 20px;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.main-about-row::-webkit-scrollbar {
+  display: none;
+}
+
+.main-about-col {
+  flex: 0 0 auto;
+  width: calc(100% / 3);
+  padding: 1em;
+}
+
+.main-about-list-items {
+  list-style-type: none;
+  font-size: 20px;
+  padding-right: 4px;
+  color: #000;
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+}
+
+.main-about-text-h6 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/*--------------------------------------------------------------
+  # Counts
+  --------------------------------------------------------------*/
+#main-about-counts {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 30px 0;
+}
+
+#main-about-counts .main-about-row.counters {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#main-about-counts .main-about-row.counters span.counter-value {
+  font-size: 48px;
+  color: #000;
+  font-weight: 700;
+}
+
+.main-about-section-bg {
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-up-section {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.slide-up {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+/*--------------------------------------------------------------
+  # Testimonials
+  --------------------------------------------------------------*/
+
+.main-about-testimonial-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20%;
+}
+
+.main-about-testimonial-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.main-about-text-h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 2%;
+}
+
+.main-about-text-h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 5%;
+  margin-left: 5%;
+}
+
+.main-about-quote {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #525252;
+}
+
+.main-about-button-container {
+  display: flex;
+  margin-top: 4%;
+  margin-left: 22%;
+}
+
+.main-about-previous {
+  margin-left: 30%;
+  border-radius: 5%;
+}
+
+.next-main-about {
+  margin-right: 60%;
+}
+
+.main-about-carousel-slide {
+  padding-left: 20%;
+  padding-right: 20%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.main-about-carousel-slide::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .main-about-flex-container {
+    flex-direction: column;
+  }
+
+  .main-about-text-content,
+  .main-about-image-content {
+    margin: 10px 0;
+    max-width: 100%;
+    font-size: 20px;
+  }
+
+  .main-about-text-h6 {
+    font-size: 15px;
+  }
+
+  .main-about-row {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .main-about-col {
+    width: 100%;
+  }
+
+  #main-about-counts .main-about-row.counters {
+    flex-direction: column;
+  }
+
+  .main-about-testimonial-wrap {
+    margin-left: 0%;
+  }
+
+  .main-about-button-container {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .main-about-list-items {
+    font-size: 13px;
+  }
+
+  .main-about-previous,
+  .next-main-about {
+    margin: 10px 0;
+  }
+
+  .main-about-carousel-slide {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-about-button-container {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 300%;
+  }
+
+  .q-carousel.q-panel-parent.q-carousel--without-padding {
+    margin-bottom: 20%;
+    margin-top: 10%;
+    margin-left: 25%;
+  }
+
+  #main-about-counts .main-about-row.counters span.counter-value {
+    font-size: 30px;
+  }
+
+  .main-about-text-h3 {
+    font-size: 20px;
+    margin-left: 10%;
+  }
+  .main-about-text-h4 {
+    font-size: 15px;
+    margin-left: 15%;
+  }
+}

@@ -1,0 +1,139 @@
+.MainLogin-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+.row > .col-8,
+.row > .col-xs-8 {
+  height: auto;
+  width: 0% !important;
+}
+
+.MainLogin-logo {
+  margin-bottom: 20px;
+}
+
+.q-card {
+  width: 500px;
+  max-width: 800px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  height: 50vh;
+  margin-bottom: 10%;
+}
+
+.q-card-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-icon {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-h6 {
+  margin-bottom: 40px;
+  margin-left: 100px;
+  color: rgb(141, 141, 141);
+  font-size: 18px;
+  justify-self: center;
+  align-items: center;
+}
+
+.register::before {
+  content: none;
+}
+
+.register {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(145, 7, 7);
+  background-color: white;
+  color: black;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.register:hover {
+  background-color: rgb(145, 7, 7);
+  color: white;
+}
+
+.check {
+  font-weight: bold;
+  color: black;
+  margin-top: 50px;
+  font-size: 17px;
+  white-space: nowrap;
+  margin-right: 40%;
+  margin-bottom: 15%;
+}
+
+.sign-up {
+  font-size: 40px;
+}
+
+.column {
+  flex-direction: row !important;
+}
+
+@media (max-width: 600px) {
+  .MainLogin-box {
+    margin-top: 80%;
+    margin-bottom: 250%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .row > .col-8,
+  .row > .col-xs-8 {
+    padding: 10px;
+  }
+
+  .q-card {
+    width: 100%;
+
+    height: auto;
+    margin-bottom: 100%;
+  }
+
+  .text-h6 {
+    margin-bottom: 20px;
+
+    font-size: 13px;
+  }
+
+  .sign-up {
+    font-size: 30px;
+  }
+
+  .q-checkbox__label.q-anchor--skip {
+    font-size: 13px;
+    width: 70%;
+    margin-bottom: 7%;
+  }
+
+  .q-checkbox__inner.relative-position.non-selectable.q-checkbox__inner--falsy {
+    margin-bottom: 10%;
+    font-size: 30px;
+  }
+
+  .text-h6 {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .register {
+    font-size: 13px;
+  }
+}

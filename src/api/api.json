@@ -1,0 +1,12 @@
+{
+  "get": {
+    "products_create": "catalog/product/create"
+  },
+  "post": {
+    "base_url": "http://localhost:8080",
+    "user_check_login": "user/check/login",
+    "create_attribute": "catalog/attribute/create",
+    "list_attribute": "catalog/attribute/list",
+    "create_attribute_group": "catalog/attribute-group/create"
+  }
+}

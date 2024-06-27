@@ -1,0 +1,502 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+section.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero h2 {
+  color: #eee;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.section-about h1,
+.courses h1,
+.trainers h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #797878aa;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 20%;
+}
+
+.section-about h1::after,
+.courses h1::after,
+.trainers h1::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #960000;
+  margin: 4px 10px;
+}
+
+.section-about h2,
+.courses h2,
+.trainers h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #3a3d3b;
+  margin-left: 20%;
+}
+
+.main-subtitle {
+  font-style: italic;
+  font-size: 17px;
+}
+
+.about .content ul li {
+  padding-bottom: 0.5%;
+  display: block;
+  margin-top: 20px; /* adjust as needed */
+  padding-left: 0;
+}
+
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #000;
+}
+
+.row > .col-md-6 {
+  height: 50%;
+  width: 100%;
+  margin-left: 20%;
+}
+
+.about .content .learn-more-btn {
+  background: #000;
+  color: #fff;
+  border-radius: 0px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.about .content .learn-more-btn:hover {
+  background: #8d0000;
+  color: #fff;
+}
+.description {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  height: 150px;
+}
+.about-h3 {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 30px 0;
+}
+
+.counts .counters {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.counts .counters span {
+  font-size: 48px;
+  color: #000;
+  font-weight: 700;
+}
+
+.section-bg {
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+}
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us .content {
+  padding: 10%;
+  background: #000;
+  border-radius: 4px;
+  color: #fff;
+  margin-right: 50px;
+}
+
+.why-us {
+  margin-left: 20%;
+  margin-bottom: 5%;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.why-us > * {
+  flex: 1;
+}
+
+.why-us .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why-us .content p {
+  margin-bottom: 30px;
+}
+
+.why-us .content .more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 0px;
+  transition: all ease-in-out 0.4s;
+  margin-top: 26%;
+}
+
+.why-us .content .more-btn i {
+  font-size: 14px;
+}
+
+.why-us .content .more-btn:hover {
+  color: #000;
+  background: #fff;
+}
+
+.icon-box {
+  text-align: center;
+  background: #fff;
+  padding: 10% 8%;
+  width: 100%;
+  border: 1px solid #eef0ef;
+  margin: 5px;
+}
+
+.col-12.col-md-3.d-flex.align-items-stretch {
+  margin: 5px;
+}
+
+.icon-box i {
+  font-size: 32px;
+  padding: 18px;
+  color: #000;
+  margin-bottom: 30px;
+  background: #ecf9f0;
+  border-radius: 50px;
+}
+
+.icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+/*--------------------------------------------------------------
+# Animation
+--------------------------------------------------------------*/
+
+.zoom-in-section {
+  transform: scale(0.8);
+  transition: transform 0.7s ease-out;
+}
+.zoom-in {
+  transform: scale(1) !important;
+}
+
+.appear-section {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.appear {
+  opacity: 1 !important;
+}
+
+.slide-up-section {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.slide-up {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+/* Get Startet Button */
+
+.get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 0px;
+  transition: 0.5s;
+  margin-top: 5%;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.get-started:hover {
+  background: #000;
+  border: 2px solid #000;
+}
+
+.list-items {
+  list-style-type: none;
+}
+
+/*--------------------------------------------------------------
+# Trainers
+--------------------------------------------------------------*/
+.trainers {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.trainer-name {
+  font-size: 20px;
+  color: rgb(54, 51, 51);
+  font-weight: bold;
+  text-align: center;
+}
+
+.trainer-specialty {
+  font-size: 14px;
+  color: rgb(59, 59, 59);
+  font-style: italic;
+}
+
+.trainer-description {
+  font-style: italic;
+  font-size: 14px;
+  color: rgb(182, 180, 180);
+  height: 150px;
+}
+
+.trainer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons {
+  width: 20%;
+  display: flex;
+  margin-left: 40%;
+}
+
+.social-icon {
+  color: rgb(128, 117, 117);
+  font-size: 160%;
+}
+
+.social-icon:hover {
+  color: black;
+}
+
+.row > .col-md-4 {
+  flex: 0 0 calc(22% - 20px);
+  max-width: calc(22% - 20px);
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+}
+
+.trainer-card {
+  margin: 10px auto;
+  width: 80%;
+}
+
+@media (max-width: 600px) {
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+
+  .hero {
+    height: 90vh;
+    width: 50vh;
+    margin-top: 45%;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+    line-height: 40px;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 5%;
+  }
+
+  .get-started {
+    margin-left: 90px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+    width: 60%;
+    margin-left: 40px;
+  }
+
+  /*--------------------------------------------------------------
+  # Counts
+  --------------------------------------------------------------*/
+
+  .counts .counters span {
+    font-size: 30px;
+  }
+
+  /*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
+  .section-about h1,
+  .courses h1,
+  .trainers h1 {
+    font-size: 14px;
+    margin-left: 10%;
+  }
+
+  .section-about h2,
+  .courses h2,
+  .trainers h2 {
+    font-size: 30px;
+    margin-left: 10%;
+  }
+
+  .row > .col-md-6 {
+    margin-left: 10%;
+    width: 90%;
+  }
+
+  .about .content ul li {
+    font-size: 14px;
+  }
+
+  .about .content ul i {
+    font-size: 16px;
+  }
+
+  .about .content .learn-more-btn {
+    font-size: 12px;
+    padding: 6px 20px 7px 20px;
+    margin-left: 90px;
+  }
+  .description {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .about-h3 {
+    font-size: 20px;
+  }
+
+  /*--------------------------------------------------------------
+  # Why Us
+  --------------------------------------------------------------*/
+  .why-us {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .why-us .content h3 {
+    font-size: 24px;
+  }
+
+  /*--------------------------------------------------------------
+  # Courses
+  --------------------------------------------------------------*/
+
+  .home-courses {
+    height: 260vh;
+  }
+
+  /*--------------------------------------------------------------
+  # Trainers
+  --------------------------------------------------------------*/
+  .social-icons {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    height: 30vh;
+  }
+
+  .social-icon {
+    margin: 0 5px;
+  }
+
+  .trainer-info {
+    padding: 0 10px;
+  }
+
+  .trainer-card {
+    width: 90%;
+
+    margin-bottom: 20%;
+    height: 80vh;
+  }
+
+  .row > .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    margin: 10px;
+  }
+
+  .q-card__actions.justify-center.q-card__actions--horiz.row.social-icons {
+    margin-top: 40%;
+  }
+
+  .trainers {
+    margin-bottom: 300%;
+    margin-top: 53%;
+  }
+}
