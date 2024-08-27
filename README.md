@@ -3,40 +3,23 @@ https://gym.portfolio.lidija-jokic.com/
 
 A Quasar Project
 
-## Install the dependencies
-```bash
-yarn
-# or
+Setup and Installation:
+To run the project locally, follow these steps:
+
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/Lydia554/Gym-Fit-Quasar.git
+Navigate to the project directory:
+bash
+Copy code
+cd Gym-Fit-Quasar
+Install the necessary dependencies:
+bash
+Copy code
 npm install
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
+Start the development server:
+bash
+Copy code
 quasar dev
-```
-
-
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+Access the application in your browser at http://localhost:8080.
