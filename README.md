@@ -6,20 +6,16 @@ A Quasar Project
 Setup and Installation:
 To run the project locally, follow these steps:
 
-Clone the repository:
-
-Copy code
+1. Clone the repository:
 git clone https://github.com/Lydia554/Gym-Fit-Quasar.git
-Navigate to the project directory:
 
-Copy code
+2. Navigate to the project directory:
 cd Gym-Fit-Quasar
-Install the necessary dependencies:
 
-Copy code
+3. Install the necessary dependencies:
 npm install
-Start the development server:
 
-Copy code
+4. Start the development server:
 quasar dev
-Access the application in your browser at http://localhost:8080.
+
+5. Access the application in your browser at http://localhost:8080.
